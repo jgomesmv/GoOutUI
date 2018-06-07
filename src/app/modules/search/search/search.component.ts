@@ -13,4 +13,9 @@ export class SearchComponent {
 
   toDos = new FormControl();
   toDosList = ['Place to eat', 'Place to drink', 'Place to have fun'];
+
+  onSubmit(value: any) {
+    console.log('Search form submited!');
+    console.log(value);
+  }
 }

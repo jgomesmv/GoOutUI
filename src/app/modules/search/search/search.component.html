@@ -1,31 +1,19 @@
-<form class="search-component">
+<form class="search-form">
 
-  <table class="search-full-width" cellspacing="0">
-    <tr>
-      <td>
-        <mat-form-field class="search-full-width">
-          <mat-select placeholder="Locations" [formControl]="locations" multiple>
-            <mat-option *ngFor="let location of locationsList" [value]="location">{{location}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </td>
-      <td>
-        <mat-form-field class="search-full-width">
-          <mat-select placeholder="What to do?" [formControl]="toDos" multiple>
-            <mat-option *ngFor="let toDo of toDosList" [value]="toDo">{{toDo}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </td> 
-      <td>
-        <mat-form-field class="search-full-width">
-          <input matInput placeholder="First name">
-        </mat-form-field></td>
-      <td>
-        <mat-form-field class="search-full-width">
-          <input matInput placeholder="Long Last Name That Will Be Truncated">
-        </mat-form-field>
-      </td>
-    </tr>
-  </table>
-
-</form>
+    <table class="search-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="search-full-width">
+        <mat-select placeholder="Locations" [formControl]="locations">
+          <mat-option *ngFor="let location of locationsList" [value]="location">{{location}}</mat-option>
+        </mat-select>
+      </mat-form-field></td>
+      <td><mat-form-field class="search-full-width">
+        <mat-select placeholder="What to do?" [formControl]="toDos" multiple>
+          <mat-option *ngFor="let toDo of toDosList" [value]="toDo">{{toDo}}</mat-option>
+        </mat-select>
+      </mat-form-field></td> 
+      <td><mat-form-field class="search-full-width">
+        <input matInput type="search" placeholder="Search by name, location or type">
+      </mat-form-field></td>
+    </tr></table>
+  
+  </form>
