@@ -4,8 +4,8 @@ import {FormControl} from '@angular/forms';
 /** @title Select with multiple selection */
 @Component({
   selector: 'search-component',
-  templateUrl: 'search-component.html',
-  styleUrls: ['search-component.css'],
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
   locations = new FormControl();

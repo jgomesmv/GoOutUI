@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PlanRoutingModule } from './plan-routing.module';
-import { WizardComponent } from './wizard/wizard.component';
+import { WizardComponent } from './components/wizard/wizard.component';
 
 @NgModule({
   imports: [
