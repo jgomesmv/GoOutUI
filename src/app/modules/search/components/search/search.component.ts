@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import {FormControl} from '@angular/forms';
 
-/** @title Select with multiple selection */
 @Component({
   selector: 'search-component',
   templateUrl: './search.component.html',

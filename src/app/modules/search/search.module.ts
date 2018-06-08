@@ -1,11 +1,13 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-// import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-// import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material';
+import { CommonModule } from '@angular/common';
 
-import { SearchRoutingModule } from './search-routing.module';
+import { SearchRoutingModule } from '../../modules/search/search-routing.module';
+import { MaterialModule } from '../../infrastructure/material/material.module';
 
-import { HomePage } from './pages/home/home.page';
+import { IndexPage } from './pages/index/index.page';
 import { SearchComponent } from './components/search/search.component';
 import { SearchListComponent } from './components/search-list/search-list.component';
 import { SearchListLeftFiltersComponent } from './components/search-list-left-filters/search-list-left-filters.component';
@@ -15,13 +17,17 @@ import { SearchService } from './search.service';
 
 @NgModule({
   imports: [
-    //CommonModule,
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+    MaterialModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
     SearchRoutingModule,
-    //BrowserAnimationsModule    
   ],
   //exports: [HomePageComponent],
   declarations: [
-    HomePage, 
+    IndexPage, 
     SearchComponent, 
     SearchListComponent, 
     SearchListLeftFiltersComponent, 
