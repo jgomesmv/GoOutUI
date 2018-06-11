@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { MatNativeDateModule } from '@angular/material';
+// import { MatNativeDateModule } from '@angular/material';
 import { CommonModule } from '@angular/common';
 
 import { SearchRoutingModule } from '../../modules/search/search-routing.module';
@@ -21,7 +21,7 @@ import { SearchService } from './search.service';
     FormsModule,
     HttpClientModule,
     MaterialModule,
-    MatNativeDateModule,
+    //MatNativeDateModule,
     ReactiveFormsModule,
     SearchRoutingModule,
   ],
