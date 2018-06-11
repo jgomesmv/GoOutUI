@@ -1,7 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-// import { MatNativeDateModule } from '@angular/material';
 import { CommonModule } from '@angular/common';
 
 import { SearchRoutingModule } from '../../modules/search/search-routing.module';
@@ -19,13 +18,12 @@ import { SearchService } from './search.service';
   imports: [
     CommonModule,
     FormsModule,
-    HttpClientModule,
-    MaterialModule,
-    //MatNativeDateModule,
     ReactiveFormsModule,
-    SearchRoutingModule,
+    HttpClientModule,
+    MaterialModule,    
+    SearchRoutingModule
   ],
-  //exports: [HomePageComponent],
+  exports: [],
   declarations: [
     IndexPage, 
     SearchComponent, 
