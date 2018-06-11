@@ -16,8 +16,8 @@ function maxLengthValidator(control: FormControl): { [s: string]: boolean } {
 export class SearchComponent {
   searchForm: FormGroup;
 
-  constructor(fb: FormBuilder) {
-    this.searchForm = fb.group({
+  constructor(formBuilder: FormBuilder) {
+    this.searchForm = formBuilder.group({
       'locations':  ['', Validators.required],
       'toDos':  ['', Validators.required],
       'searchText':  ['', Validators.compose([
