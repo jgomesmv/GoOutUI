@@ -6,7 +6,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
-//import { SearchModule } from './modules/search/search.module';
+import { MaterialModule } from './infrastructure/material/material.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -20,16 +20,14 @@ import { FooterComponent } from './shared/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    MaterialModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    //SearchModule
+    ReactiveFormsModule
   ],
-  exports:[
-    //SearchModule,
-  ],
+  exports:[],
   providers: [],
   bootstrap: [AppComponent]
 })
